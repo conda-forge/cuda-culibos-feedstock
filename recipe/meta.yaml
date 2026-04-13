@@ -1,5 +1,5 @@
-{% set version = "13.2.51" %}
-{% set cuda_version = "13.2.0" %}
+{% set version = "13.2.75" %}
+{% set cuda_version = "13.2" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-sbsa" %}  # [aarch64 and arm_variant_type == "sbsa"]
 {% set platform = "linux-aarch64" %}  # [aarch64 and arm_variant_type == "tegra"]
@@ -14,9 +14,9 @@
 
 {% set soname = version.split(".")[0] %}
 
-{% set sha256 = "dece3cdb7954d276e07eb23bee882a24627f431654cdeeef2bcee2d22669d93c" %}  # [linux64]
-{% set sha256 = "35244c4d90e5b1aa48fb98d655f6dfa3f9e4f7d0ac220266ebf85c0928a7524b" %}  # [aarch64 and arm_variant_type=="sbsa"]
-#{% set sha256 = "03e4404e888609bc98f496453896acc34c9ca7bbc39cc32b41d677bcaab71c49" %}  # [aarch64 and arm_variant_type=="tegra"]
+{% set sha256 = "1e6acf1fd637272d4eb1706aa68ed9bffd8768eac91bed2d3b376de19c58fa39" %}  # [linux64]
+{% set sha256 = "4d90195b2a6b7d6a4b36583e8dead5f10fe702c4d76d5d1b78abc074bb2ec893" %}  # [aarch64 and arm_variant_type=="sbsa"]
+#{% set sha256 = "4d90195b2a6b7d6a4b36583e8dead5f10fe702c4d76d5d1b78abc074bb2ec893" %}  # [aarch64 and arm_variant_type=="tegra"]
 
 package:
   name: cuda-culibos-split
